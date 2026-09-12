@@ -1,0 +1,121 @@
+.page {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 60px 24px;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .iconCircle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #fff2e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 28px auto;
+  }
+  
+  .icon {
+    font-size: 42px !important;
+    color: #e67e22 !important;
+  }
+  
+  .tag {
+    color: #e67e22 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 14px !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .title {
+    font-size: 2.6rem !important;
+    font-weight: 800 !important;
+    color: #1a1a1a !important;
+    margin-bottom: 16px !important;
+  }
+  
+  .subtitle {
+    font-size: 15.5px !important;
+    line-height: 1.7 !important;
+    color: #666666 !important;
+    margin-bottom: 32px !important;
+  }
+  
+  .progressBar {
+    width: 100%;
+    max-width: 320px;
+    height: 6px;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto 40px auto;
+  }
+  
+  .progressFill {
+    width: 65%;
+    height: 100%;
+    background: linear-gradient(90deg, #e67e22, #ff9d45);
+    border-radius: 10px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .primaryBtn {
+    background-color: #e67e22 !important;
+    color: #ffffff !important;
+    text-transform: none !important;
+    font-weight: 600 !important;
+    padding: 12px 28px !important;
+    border-radius: 8px !important;
+  }
+  
+  .primaryBtn:hover {
+    background-color: #cf6a12 !important;
+  }
+  
+  .secondaryBtn {
+    color: #1a1a1a !important;
+    border-color: #1a1a1a !important;
+    text-transform: none !important;
+    font-weight: 600 !important;
+    padding: 12px 28px !important;
+    border-radius: 8px !important;
+  }
+  
+  .secondaryBtn:hover {
+    border-color: #e67e22 !important;
+    color: #e67e22 !important;
+    background-color: rgba(230, 126, 34, 0.05) !important;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .title {
+      font-size: 2rem !important;
+    }
+    .iconCircle {
+      width: 76px;
+      height: 76px;
+    }
+    .icon {
+      font-size: 34px !important;
+    }
+    .actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }

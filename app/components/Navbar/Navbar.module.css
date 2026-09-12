@@ -1,0 +1,78 @@
+.appBar {
+    background-color: #ffffff !important;
+    color: #1a1a1a !important;
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #1a1a1a;
+  }
+  
+  .logo span {
+    color: #e67e22; /* apna brand color yahan daalein */
+  }
+  
+  .desktopMenu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .navButton {
+    color: #1a1a1a !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    font-size: 16px !important;
+  }
+  
+  .navButton:hover {
+    color: #e67e22 !important;
+  }
+  
+  .quoteButton {
+    background-color: #e67e22 !important;
+    color: #ffffff !important;
+    text-transform: none !important;
+    padding: 8px 20px !important;
+    border-radius: 6px !important;
+    margin-left: 10px !important;
+  }
+  
+  .quoteButton:hover {
+    background-color: #cf6a12 !important;
+  }
+  
+  .hamburger {
+    display: none !important;
+  }
+  
+  .drawerBox {
+    width: 250px;
+    padding-top: 20px;
+  }
+  
+  .closeIcon {
+    margin-left: 10px !important;
+  }
+  
+  /* Responsive breakpoint */
+  @media (max-width: 900px) {
+    .desktopMenu {
+      display: none;
+    }
+    .hamburger {
+      display: inline-flex !important;
+    }
+    .toolbar {
+      padding: 10px 20px;
+    }
+  }
