@@ -7,6 +7,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import Image from "next/image";
 import styles from "./Footer.module.css";
 
 const quickLinks = [
@@ -33,9 +34,16 @@ export default function Footer() {
         <Grid container spacing={4} className={styles.grid}>
           {/* Company Info */}
           <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-            <Typography variant="h6" className={styles.logo}>
-              Your<span>Brand</span>
-            </Typography>
+          <Link href="/" className={styles.logo}>
+  <Image
+    src="/logo/skr_logo-removebg-preview.png"
+    alt="YourBrand Logo"
+    width={80}
+    height={35}
+    priority
+    className={styles.logoImage}
+  />
+</Link>
             <Typography className={styles.desc}>
               Trusted experts in epoxy flooring, PU flooring, waterproofing
               and groove cutting solutions for industrial and commercial

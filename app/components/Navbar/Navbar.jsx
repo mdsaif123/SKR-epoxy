@@ -17,13 +17,13 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import styles from "./Navbar.module.css";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Gallery", href: "/gallery" },
-  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -35,9 +35,18 @@ export default function Navbar() {
     <AppBar position="sticky" className={styles.appBar} elevation={2}>
       <Toolbar className={styles.toolbar}>
         {/* Logo */}
-        <Link href="/" className={styles.logo}>
-          SK<span>R</span>
-        </Link>
+
+
+<Link href="/" className={styles.logo}>
+  <Image
+    src="/logo/skr_logo-removebg-preview.png"
+    alt="YourBrand Logo"
+    width={80}
+    height={35}
+    priority
+    className={styles.logoImage}
+  />
+</Link>
 
         {/* Desktop Menu */}
         <Box className={styles.desktopMenu}>

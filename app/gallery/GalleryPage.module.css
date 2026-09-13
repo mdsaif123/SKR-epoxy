@@ -1,0 +1,45 @@
+.page {
+    min-height: 100vh;
+    margin-top: 50px;
+  }
+  
+  .banner {
+    background-color: #1a1a1a;
+    padding: 70px 0 60px 0;
+  }
+  
+  .breadcrumb {
+    color: #b0b0b0 !important;
+    font-size: 13px !important;
+    margin-bottom: 14px !important;
+  }
+  
+  .breadcrumb span {
+    color: #e67e22;
+  }
+  
+  .bannerTitle {
+    color: #ffffff !important;
+    font-size: 2.6rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .bannerSubtitle {
+    color: #d0d0d0 !important;
+    font-size: 1.05rem !important;
+    max-width: 650px;
+  }
+  
+  .gallerySection {
+    padding: 70px 24px;
+  }
+  
+  @media (max-width: 600px) {
+    .bannerTitle {
+      font-size: 1.8rem !important;
+    }
+    .gallerySection {
+      padding: 50px 16px;
+    }
+  }
