@@ -10,6 +10,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Image from "next/image";
 import styles from "./Footer.module.css";
 
+
 const quickLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
